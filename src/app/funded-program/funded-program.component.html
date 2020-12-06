@@ -1,0 +1,33 @@
+<div class="funded-container">
+  <div class="jumbotron-container">
+    <h3>Take the 1 step challenge!</h3>
+    <h6>
+      Pass and manage upto 400k in capital, you keep up to 90% of the profits!
+    </h6>
+  </div>
+  <div class="challenges-container">
+    <div
+      class="card-wrapper"
+      *ngFor="let challenge of challenges; let i = index"
+    >
+      <app-flip-card [config]="challenge"></app-flip-card>
+    </div>
+  </div>
+  <div class="rules-container">
+    <h3>How it works?</h3>
+    <p>
+      Fidelcrest is a fast growing Proprietary Trading Company. Our business is
+      to find skilled Forex traders who can make sustainable long term profits.
+      Once we have found traders who have proved they can trade, we offer them
+      our own capital to trade. Our traders can trade funded accounts as long as
+      max loss limits haven’t been reached and no rules or objectives haven’t
+      been violated. Fidelcrest offers great opportunity to become professional
+      trader!
+    </p>
+    <div class="steps-container">
+      <div class="card-wrapper" *ngFor="let step of steps; let i = index">
+        <app-flip-card [config]="step"></app-flip-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.funded-container {
+  .jumbotron-container {
+    text-align: center;
+  }
+  .challenges-container, .steps-container {
+    display: flex;
+    .card-wrapper {
+      flex: 1;
+      margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+$greenColor: #28a745;
+$redColor: #dc3545;
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$lightGreyColor: grey;
+
+//override bootstrap variables
+$primary: #3498db;
+$secondary: #e67e22;
+$success: #2ecc71;
+$danger: #e74c3c;
+
+@mixin primary-row {
+  color: $blackColor;
+  font-weight: 500;
+  font-size: 14px;
+}
+@mixin secondary-row {
+  color: $lightGreyColor;
+  font-size: 12px;
+}

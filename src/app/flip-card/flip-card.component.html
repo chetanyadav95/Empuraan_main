@@ -1,0 +1,11 @@
+<div class="flip-card-container">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar">
+    </div>
+    <div class="flip-card-back">
+      <a *ngIf="config?.url" [routerLink]="config.url">{{config.url}}</a>
+      <a *ngIf="config?.href" (click)="redirectTo(config.href)">{{config.href}}</a>
+    </div>
+  </div>
+</div>
