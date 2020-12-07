@@ -1,7 +1,8 @@
 <div class="flip-card-container">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar">
+      <img src="./../../assets/images/logo.png" alt="Avatar">
+      <h5>{{config.title}}</h5>
     </div>
     <div class="flip-card-back">
       <a *ngIf="config?.url" [routerLink]="config.url">{{config.url}}</a>
