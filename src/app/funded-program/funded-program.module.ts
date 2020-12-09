@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { FundedProgramRoutingModule } from './funded-program-routing.module';
 import { FundedProgramComponent } from './funded-program.component';
-import { FlipCardModule } from '../flip-card/flip-card.module';
 import { CardModule } from '../card/card.module';
 import { FundedProgramService } from './funded-program.service';
+import { ChallengeCardModule } from '../challenge-card/challenge-card.module';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { FundedProgramService } from './funded-program.service';
   imports: [
     CommonModule,
     FundedProgramRoutingModule,
-    FlipCardModule,
+    ChallengeCardModule,
     CardModule
   ],
   providers: [FundedProgramService],

@@ -3,5 +3,17 @@
   .card-wrapper {
     flex: 1;
     margin: 10px;
+    &:nth-child(1) ::ng-deep .card-front {
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+    &:nth-child(2) ::ng-deep .card-front {
+      background-color: #fff !important;
+      color: #000 !important;
+    }
+    &:nth-child(3) ::ng-deep .card-front {
+      background-color: #000f6f !important;
+      color: #fff !important;
+    }
   }
 }
