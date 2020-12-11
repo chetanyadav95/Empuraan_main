@@ -1,13 +1,22 @@
 <div class="funded-container">
-  <div class="jumbotron-container">
-    <h3>Take the 1 step challenge!</h3>
-    <h6>
-      Pass and manage upto 400k in capital, you keep up to 90% of the profits!
-    </h6>
-  </div>
-  <div class="challenges-container">
+  <section class="storefront-jumbotron">
+    <div class="jumbotron-row">
+      <div class="jumbotron-cell">
+        <div class="jumbotron-content">
+          <h1 class="jumbotron-title">
+            Take the 1 step challenge!
+          </h1>
+          <p>Pass and manage upto 400k in capital, you keep up to 90% of the profits!</p>
+          <!-- <a class="jumbotron-call-to-action-btn btn btn-with-animation" href="#funded-challenge-list" pagescroll="" role="button">
+            <span class="btn-text">Browse Challenges</span>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="challenges-container col-sm-12 row" id="funded-challenge-list">
     <div
-      class="card-wrapper"
+      class="card-wrapper col-sm-4"
       *ngFor="let challenge of challenges; let i = index"
     >
       <app-challenge-card [config]="challenge"></app-challenge-card>
@@ -24,9 +33,12 @@
       been violated. Fidelcrest offers great opportunity to become professional
       trader!
     </p>
-    <div class="steps-container">
-      <div class="card-wrapper" *ngFor="let step of steps; let i = index">
-        <app-card [config]="step"></app-card>
+    <div class="steps-container col-sm-12 row">
+      <div
+        class="card-wrapper col-sm-4"
+        *ngFor="let step of steps; let i = index"
+      >
+        <app-challenge-steps-card [config]="step"></app-challenge-steps-card>
       </div>
     </div>
   </div>

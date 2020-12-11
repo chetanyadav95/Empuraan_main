@@ -6,6 +6,7 @@ import { FundedProgramComponent } from './funded-program.component';
 import { CardModule } from '../card/card.module';
 import { FundedProgramService } from './funded-program.service';
 import { ChallengeCardModule } from '../challenge-card/challenge-card.module';
+import { ChallengeStepsCardModule } from '../challenge-steps-card/challenge-steps-card.module';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { ChallengeCardModule } from '../challenge-card/challenge-card.module';
     CommonModule,
     FundedProgramRoutingModule,
     ChallengeCardModule,
-    CardModule
+    ChallengeStepsCardModule
   ],
   providers: [FundedProgramService],
   exports: [FundedProgramComponent],
