@@ -1,11 +1,208 @@
 .gold-container {
-  height: 100%;
-  display: flex ;
-  align-items: center;
-  .image {
-    img {
-      width: 100%;
-      height: auto;
+  display: block;
+  .storefront-jumbotron {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    background-color: #1976d2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top: calc(-90px);
+    padding-top: calc(90px);
+    background-image: url("./../../assets/images/bg.jpg");
+    background-color: #dd0031;
+    color: #ffffff;
+  }
+  .storefront-jumbotron a:not(.btn) {
+    color: #ffffff;
+    text-decoration: underline;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+  .storefront-jumbotron .jumbotron-row {
+    display: table-row;
+  }
+  .storefront-jumbotron .jumbotron-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .storefront-jumbotron .jumbotron-content .jumbotron-title {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 799px) {
+    .storefront-jumbotron {
+      padding-top: 0;
     }
+  }
+  .storefront-jumbotron .jumbotron-content .jumbotron-title {
+    margin-top: 0px;
+    font-weight: normal;
+  }
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-standout {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn {
+    color: #ffffff;
+    background-color: #8b001f;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    letter-spacing: 0.04em;
+    -webkit-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -moz-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -ms-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -o-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    padding: 15px !important;
+    margin: 20px 0;
+    margin-bottom: 20px !important;
+  }
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn:hover,
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn:focus,
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn.focus {
+    color: #ffffff;
+    background-color: #aa0026;
+    border-color: transparent;
+  }
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn:active,
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn.active {
+    color: #ffffff;
+    background-color: rgba(170, 0, 38, 0.6);
+    border-color: rgba(0, 0, 0, 0.7);
+  }
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .call-to-action-animation
+    .mousey {
+    width: 3px;
+    padding: 4px 8px;
+    margin-top: 5px;
+    height: 27px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  store-front-page
+    .storefront-jumbotron
+    .jumbotron-content
+    .call-to-action-animation
+    .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+  }
+  .storefront-highlighted-product {
+    background-color: #262626;
+    padding: 60px 0;
+  }
+  .storefront-highlighted-product .product-image {
+    display: block;
+    -webkit-box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.1);
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+  }
+  .storefront-highlighted-product .product-standout {
+    display: block;
+    line-height: 34px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .storefront-highlighted-product .product-title {
+    font-size: 30px;
+    margin-top: 0px;
+    color: #ffffff;
+  }
+  .storefront-highlighted-product .highlight-description {
+    margin-bottom: 0;
+    font-weight: 300;
+    max-width: 400px;
+  }
+  store-front-page
+    .storefront-highlighted-product
+    .highlight-description
+    .description-standout {
+    display: block;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  @media only screen and (max-width: 767px) {
+    .storefront-highlighted-product .highlight-description {
+      margin: auto;
+    }
+  }
+  store-front-page
+    .storefront-highlighted-product
+    .highlight-call-to-action-btn {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    letter-spacing: 0.04em;
+    -webkit-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -moz-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -ms-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -o-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    transition: border-color;
   }
 }

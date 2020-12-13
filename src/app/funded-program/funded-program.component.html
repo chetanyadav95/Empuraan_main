@@ -3,43 +3,83 @@
     <div class="jumbotron-row">
       <div class="jumbotron-cell">
         <div class="jumbotron-content">
-          <h1 class="jumbotron-title">
-            Take the 1 step challenge!
-          </h1>
-          <p>Pass and manage upto 400k in capital, you keep up to 90% of the profits!</p>
-          <!-- <a class="jumbotron-call-to-action-btn btn btn-with-animation" href="#funded-challenge-list" pagescroll="" role="button">
+          <h1 class="jumbotron-title">Take the 1 step challenge!</h1>
+          <p>
+            Pass and manage upto 400k in capital, you keep up to 90% of the
+            profits!
+          </p>
+          <a
+            class="jumbotron-call-to-action-btn btn btn-with-animation"
+            (click)="onClickScroll('funded-challenge-list')"
+            pagescroll
+            role="button"
+          >
             <span class="btn-text">Browse Challenges</span>
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
   </section>
-  <div class="challenges-container col-sm-12 row" id="funded-challenge-list">
-    <div
-      class="card-wrapper col-sm-4"
-      *ngFor="let challenge of challenges; let i = index"
-    >
-      <app-challenge-card [config]="challenge"></app-challenge-card>
-    </div>
-  </div>
-  <div class="rules-container">
-    <h3>How it works?</h3>
-    <p>
-      Fidelcrest is a fast growing Proprietary Trading Company. Our business is
-      to find skilled Forex traders who can make sustainable long term profits.
-      Once we have found traders who have proved they can trade, we offer them
-      our own capital to trade. Our traders can trade funded accounts as long as
-      max loss limits haven’t been reached and no rules or objectives haven’t
-      been violated. Fidelcrest offers great opportunity to become professional
-      trader!
-    </p>
-    <div class="steps-container col-sm-12 row">
-      <div
-        class="card-wrapper col-sm-4"
-        *ngFor="let step of steps; let i = index"
-      >
-        <app-challenge-steps-card [config]="step"></app-challenge-steps-card>
+  <section class="storefront-jumbotron" id="funded-challenge-list">
+    <div class="jumbotron-row">
+      <div class="jumbotron-cell">
+        <div class="jumbotron-content">
+          <div class="challenges-container col-sm-12 row">
+            <div
+              class="card-wrapper col-sm-4"
+              *ngFor="let challenge of challenges; let i = index"
+            >
+              <app-challenge-card [config]="challenge"></app-challenge-card>
+            </div>
+          </div>
+          <a
+            class="jumbotron-call-to-action-btn btn btn-with-animation"
+            (click)="onClickScroll('funded-rules-list')"
+            pagescroll
+            role="button"
+          >
+            <span class="btn-text">Browse Rules</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="storefront-jumbotron" id="funded-rules-list">
+    <div class="jumbotron-row">
+      <div class="jumbotron-cell">
+        <div class="jumbotron-content">
+          <div class="rules-container">
+            <h3>How it works?</h3>
+            <p>
+              Fidelcrest is a fast growing Proprietary Trading Company. Our
+              business is to find skilled Forex traders who can make sustainable
+              long term profits. Once we have found traders who have proved they
+              can trade, we offer them our own capital to trade. Our traders can
+              trade funded accounts as long as max loss limits haven’t been
+              reached and no rules or objectives haven’t been violated.
+              Fidelcrest offers great opportunity to become professional trader!
+            </p>
+            <div class="steps-container col-sm-12 row">
+              <div
+                class="card-wrapper col-sm-4"
+                *ngFor="let step of steps; let i = index"
+              >
+                <app-challenge-steps-card
+                  [config]="step"
+                ></app-challenge-steps-card>
+              </div>
+            </div>
+          </div>
+          <a
+            class="jumbotron-call-to-action-btn btn btn-with-animation"
+            (click)="onClickScroll('funded-challenge-list')"
+            pagescroll
+            role="button"
+          >
+            <span class="btn-text">Browse Challenges</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
