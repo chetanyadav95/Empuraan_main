@@ -2,27 +2,58 @@ $jumbotronHeight: 40%;
 
 .dashboard-container {
   height: 100%;
-  .jumbotron-container {
+  display: block;
+  .storefront-jumbotron {
+    width: 100%;
     height: $jumbotronHeight;
-    .logo-container {
-      height: 80%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      img {
-        height: 100%;
-        width: auto;
-      }
-    }
-    .details-container {
-      text-align: center;
-    }
-    .horizontal-break {
-      margin-left: 6rem;
-      margin-right: 6rem;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .storefront-jumbotron .jumbotron-row {
+    display: table-row;
+  }
+  .storefront-jumbotron .jumbotron-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .storefront-jumbotron .jumbotron-content .jumbotron-title {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 799px) {
+    .storefront-jumbotron {
+      padding-top: 0;
     }
   }
+  .storefront-jumbotron .jumbotron-content .jumbotron-title {
+    margin-top: 0px;
+    font-weight: normal;
+  }
+  // .jumbotron-container {
+  //   height: $jumbotronHeight;
+  //   .logo-container {
+  //     height: 80%;
+  //     width: 100%;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     img {
+  //       height: 100%;
+  //       width: auto;
+  //     }
+  //   }
+  //   .details-container {
+  //     text-align: center;
+  //   }
+  //   .horizontal-break {
+  //     margin-left: 6rem;
+  //     margin-right: 6rem;
+  //   }
+  // }
   .programmes-wrapper {
     height: calc(100% - #{$jumbotronHeight});
     display: flex;
@@ -31,7 +62,7 @@ $jumbotronHeight: 40%;
       flex: 1;
     }
   }
-}
-.center {
-  text-align: center;
+  .center {
+    text-align: center;
+  }
 }
