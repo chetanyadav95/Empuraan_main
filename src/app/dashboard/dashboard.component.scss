@@ -1,7 +1,9 @@
+$jumbotronHeight: 40%;
+
 .dashboard-container {
   height: 100%;
   .jumbotron-container {
-    height: 40%;
+    height: $jumbotronHeight;
     .logo-container {
       height: 80%;
       width: 100%;
@@ -16,5 +18,20 @@
     .details-container {
       text-align: center;
     }
+    .horizontal-break {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
   }
+  .programmes-wrapper {
+    height: calc(100% - #{$jumbotronHeight});
+    display: flex;
+    flex-direction: column;
+    app-programmes {
+      flex: 1;
+    }
+  }
+}
+.center {
+  text-align: center;
 }

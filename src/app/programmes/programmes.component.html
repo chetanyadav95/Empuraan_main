@@ -1,5 +1,5 @@
-<div class="programmes-container">
-  <div class="card-wrapper" *ngFor="let program of programmes; let i=index">
+<div class="programmes-container col-sm-12 row">
+  <div class="card-wrapper col-sm-4" *ngFor="let program of programmes; let i=index">
     <app-program-card [config]="program"></app-program-card>
   </div>
 </div>
