@@ -1,7 +1,11 @@
 export interface IChallengeCardConfig {
-  logo: string;
-  title: string;
-  description: string;
-  url?: string;
-  href?: string;
+  initialCapital: string;
+  tradingStrategy: string;
+  progitTarget: string;
+  progitTargetCriteria: string;
+  instruments: string;
+  tradingPeriod: string;
+  yourShare: string;
+  evaluationFee: string;
+  tnc: string;
 }
