@@ -42,7 +42,7 @@ export class FundedProgramService {
   ];
   private steps = [
     {
-      icon: "trading_program_step",
+      icon: "ballot",
       title: "Choose Trading Program",
       description:
         "You can choose a trading strategy and account size form $5,000 to $400,000 to meet your skills and profit targets.",
@@ -51,7 +51,7 @@ export class FundedProgramService {
       // href: ''
     },
     {
-      icon: "trading_program_step",
+      icon: "query_stats",
       title: "Prove you can trade",
       description:
         "Traders taking on the Fidelcrest Challenge must prove their Trading abilities by meeting specific Profit Targets without violating any of the Rules.",
@@ -60,7 +60,7 @@ export class FundedProgramService {
       // href: ''
     },
     {
-      icon: "trading_program_step",
+      icon: "monetization_on",
       title: "Start Earning",
       description:
         "Once you have passed the challenge phase you can start earning commissions up to 50% of profits and after completing the funded verification phase, you can earn up 40 to 90% of all profits made. Fidelcrest pays your profits out every month!",
