@@ -44,40 +44,32 @@
       </div>
     </div>
   </section>
-  <section class="storefront-jumbotron" id="funded-rules-list">
-    <div class="jumbotron-row">
-      <div class="jumbotron-cell">
-        <div class="jumbotron-content">
-          <div class="rules-container">
-            <h3>How it works?</h3>
+  <section id="funded-rules-list">
+    <div class="funded-rules-container">
+      <div class="jumbotron-row">
+        <div class="jumbotron-cell">
+          <div class="jumbotron-content">
+            <h1 class="jumbotron-title">How it works?</h1>
             <p>
               Empuraan is a fast growing Proprietary Trading Company. Our
-              business is to find skilled traders who can make sustainable
-              long term profits. Once we have found traders who have proved they
-              can trade, we offer them our own capital to trade. Our traders can
+              business is to find skilled traders who can make sustainable long
+              term profits. Once we have found traders who have proved they can
+              trade, we offer them our own capital to trade. Our traders can
               trade funded accounts as long as max loss limits haven’t been
-              reached and no rules or objectives haven’t been violated.
-              Empuraan offers great opportunity to become professional trader!
+              reached and no rules or objectives haven’t been violated. Empuraan
+              offers great opportunity to become professional trader!
             </p>
-            <div class="steps-container col-sm-12 row">
-              <div
-                class="card-wrapper col-sm-4"
-                *ngFor="let step of steps; let i = index"
-              >
-                <app-challenge-steps-card
-                  [config]="step"
-                ></app-challenge-steps-card>
-              </div>
-            </div>
           </div>
-          <a
-            class="jumbotron-call-to-action-btn btn btn-with-animation"
-            (click)="onClickScroll('funded-challenge-list')"
-            pagescroll
-            role="button"
-          >
-            <span class="btn-text">Browse Challenges</span>
-          </a>
+        </div>
+      </div>
+    </div>
+    <div class="rules-container">
+      <div class="steps-container col-sm-12 row">
+        <div
+          class="card-wrapper col-sm-4"
+          *ngFor="let step of steps; let i = index"
+        >
+          <app-challenge-steps-card [config]="step"></app-challenge-steps-card>
         </div>
       </div>
     </div>

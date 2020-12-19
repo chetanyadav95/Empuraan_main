@@ -1,7 +1,8 @@
 export interface IChallengeStepsCardConfig {
-  logo: string;
+  icon: string;
   title: string;
   description: string;
+  btnText: string;
   url?: string;
   href?: string;
 }
