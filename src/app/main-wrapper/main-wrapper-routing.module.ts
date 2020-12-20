@@ -22,8 +22,12 @@ const routes: Routes = [
         loadChildren: () => import('./../gold-program/gold-program.module').then(m => m.GoldProgramModule)
       },
       {
-        path: 'funded-challenge',
+        path: 'funded-challenge/:id',
         loadChildren: () => import('./../funded-challenge/funded-challenge.module').then(m => m.FundedChallengeModule)
+      },
+      {
+        path: 'gold-details',
+        loadChildren: () => import('./../gold-details/gold-details.module').then(m => m.GoldDetailsModule)
       }
     ]
   },

@@ -1,20 +1,9 @@
 <div class="funded-challenge-container">
   <div class="challenge-description">
-    <h2>{{ config.title }}</h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </p>
+    <h2>Program Information</h2>
   </div>
   <div class="description-card">
-    <app-card [config]="config.cardConfig"></app-card>
+    <app-challenge-card [config]="cardConfig"></app-challenge-card>
   </div>
   <div class="description-table">
     <!--Table-->
@@ -62,63 +51,22 @@
           <td>Photographer</td>
           <td>25</td>
         </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Jerry</td>
-          <td>Horwitz</td>
-          <td>Italy</td>
-          <td>Bari</td>
-          <td>Editor-in-chief</td>
-          <td>41</td>
-        </tr>
-        <tr class="table-info">
-          <th scope="row">5</th>
-          <td>Janis</td>
-          <td>Joplin</td>
-          <td>Poland</td>
-          <td>Warsaw</td>
-          <td>Video Maker</td>
-          <td>39</td>
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td>Gary</td>
-          <td>Winogrand</td>
-          <td>Germany</td>
-          <td>Berlin</td>
-          <td>Photographer</td>
-          <td>37</td>
-        </tr>
-        <tr class="table-info">
-          <th scope="row">7</th>
-          <td>Angie</td>
-          <td>Smith</td>
-          <td>USA</td>
-          <td>San Francisco</td>
-          <td>Teacher</td>
-          <td>52</td>
-        </tr>
-        <tr>
-          <th scope="row">8</th>
-          <td>John</td>
-          <td>Mattis</td>
-          <td>France</td>
-          <td>Paris</td>
-          <td>Actor</td>
-          <td>28</td>
-        </tr>
-        <tr class="table-info">
-          <th scope="row">9</th>
-          <td>Otto</td>
-          <td>Morris</td>
-          <td>Germany</td>
-          <td>Munich</td>
-          <td>Singer</td>
-          <td>35</td>
-        </tr>
       </tbody>
       <!--Table body-->
     </table>
     <!--Table-->
+  </div>
+  <div class="guidelines">
+    <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Personal data </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+            <mat-icon>account_circle</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>

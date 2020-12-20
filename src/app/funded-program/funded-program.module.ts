@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { FundedProgramRoutingModule } from './funded-program-routing.module';
 import { FundedProgramComponent } from './funded-program.component';
-import { CardModule } from '../card/card.module';
-import { FundedProgramService } from './funded-program.service';
 import { ChallengeCardModule } from '../challenge-card/challenge-card.module';
 import { ChallengeStepsCardModule } from '../challenge-steps-card/challenge-steps-card.module';
 
@@ -17,7 +15,7 @@ import { ChallengeStepsCardModule } from '../challenge-steps-card/challenge-step
     ChallengeCardModule,
     ChallengeStepsCardModule
   ],
-  providers: [FundedProgramService],
+  providers: [],
   exports: [FundedProgramComponent],
   entryComponents: [FundedProgramComponent]
 })

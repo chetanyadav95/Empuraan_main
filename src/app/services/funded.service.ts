@@ -1,7 +1,9 @@
 import { Injectable } from "@angular/core";
 
-@Injectable()
-export class FundedProgramService {
+@Injectable({
+  providedIn: 'root'
+})
+export class FundedService {
   private challenges = [
     {
       initialCapital: "INR 5 Lakh*",
@@ -72,8 +74,11 @@ export class FundedProgramService {
 
   constructor() {}
 
-  getChallenges() {
+  getAllChallenges() {
     return this.challenges;
+  }
+  getChallengeById(id: number) {
+    return this.challenges[id];
   }
   getSteps() {
     return this.steps;

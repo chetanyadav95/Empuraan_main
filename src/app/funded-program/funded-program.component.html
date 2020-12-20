@@ -29,6 +29,7 @@
             <div
               class="card-wrapper col-sm-4"
               *ngFor="let challenge of challenges; let i = index"
+              [routerLink]="[ '/funded-challenge',i]"
             >
               <app-challenge-card [config]="challenge"></app-challenge-card>
             </div>

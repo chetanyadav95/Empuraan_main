@@ -1,6 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FundedProgramService } from './funded-program.service';
+import { FundedService } from '../services/funded.service';
 
 @Component({
   selector: 'app-funded-program',
@@ -12,11 +12,11 @@ export class FundedProgramComponent implements OnInit {
   challenges: any;
   steps: any;
 
-  constructor(private viewportScroller: ViewportScroller, private fundedProgramService: FundedProgramService) { }
+  constructor(private viewportScroller: ViewportScroller,  private fundedService: FundedService) { }
 
   ngOnInit() {
-    this.challenges = this.fundedProgramService.getChallenges();
-    this.steps = this.fundedProgramService.getSteps();
+    this.challenges = this.fundedService.getAllChallenges();
+    this.steps = this.fundedService.getSteps();
   }
 
   onClickScroll(elementId: string) {
