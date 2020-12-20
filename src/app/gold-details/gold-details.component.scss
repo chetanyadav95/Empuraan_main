@@ -1,0 +1,106 @@
+.gold-details-container {
+  display: block;
+  height: 100%;
+  .storefront-jumbotron {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    background-color: #1976d2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    // margin-top: calc(-90px);
+    // padding-top: calc(90px);
+    background-image: url("./../../assets/images/bg12.jpg");
+    background-color: #dd0031;
+    color: #ffffff;
+  }
+  .storefront-jumbotron a:not(.btn) {
+    color: #ffffff;
+    text-decoration: underline;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+  .storefront-jumbotron .jumbotron-row {
+    display: table-row;
+  }
+  .storefront-jumbotron .jumbotron-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .storefront-jumbotron .jumbotron-content .jumbotron-call-to-action-btn {
+    color: #ffffff;
+    background-color: #ffaa06;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    letter-spacing: 0.04em;
+    -webkit-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -moz-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -ms-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    -o-transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    padding: 15px !important;
+    margin: 20px 0;
+    margin-bottom: 20px !important;
+  }
+  .storefront-jumbotron .jumbotron-content .jumbotron-call-to-action-btn:hover,
+  .storefront-jumbotron .jumbotron-content .jumbotron-call-to-action-btn:focus,
+  .storefront-jumbotron .jumbotron-content .jumbotron-call-to-action-btn.focus {
+    color: #ffffff;
+    background-color: #aa0026;
+    border-color: transparent;
+  }
+  .storefront-jumbotron .jumbotron-content .jumbotron-call-to-action-btn:active,
+  .storefront-jumbotron
+    .jumbotron-content
+    .jumbotron-call-to-action-btn.active {
+    color: #ffffff;
+    background-color: rgba(170, 0, 38, 0.6);
+    border-color: rgba(0, 0, 0, 0.7);
+  }
+  .storefront-jumbotron .jumbotron-content {
+    color: #000000;
+    .heading {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      color: #ffffff;
+    }
+    .description-table {
+      table {
+        margin: auto;
+        background-color: #292b37;
+        color: #8d8f9a;
+        th {
+          border-top: 1px solid #8d8f9a;
+        }
+        thead {
+          th {
+            border-bottom: 1px solid #8d8f9a;
+          }
+        }
+        button {
+          background-color: #ffaa06;
+          color: #ffffff;
+        }
+      }
+    }
+
+  }
+  @media only screen and (max-width: 799px) {
+    .storefront-jumbotron {
+      padding-top: 0;
+    }
+  }
+}

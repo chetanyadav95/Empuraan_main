@@ -1,5 +1,6 @@
 .gold-container {
   display: block;
+  height: 100%;
   .storefront-jumbotron {
     width: 100%;
     display: table;
@@ -12,10 +13,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
-    margin-top: calc(-90px);
-    padding-top: calc(90px);
-    background-image: url("./../../assets/images/bg.jpg");
+    height: 100%;
+    // margin-top: calc(-90px);
+    // padding-top: calc(90px);
+    background-image: url("./../../assets/images/bg12.jpg");
     background-color: #dd0031;
     color: #ffffff;
   }
@@ -74,13 +75,16 @@
       font-weight: bold;
       font-size: 4rem;
       margin-bottom: 2rem;
+      color: #ffffff;
     }
     .details {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #ffffff;
+      background-color: #ececec;
+      margin: auto;
+      padding: 15px;
       .title {
         font-size: 2rem;
         font-weight: bold;
