@@ -4,40 +4,40 @@ import { Injectable } from "@angular/core";
 export class FundedProgramService {
   private challenges = [
     {
-      initialCapital: "5,00,000 INR",
+      initialCapital: "INR 5 Lakh*",
       tradingStrategy: "Normal",
       progitTarget: "5%",
-      progitTargetCriteria: "(Funded account 2.5%)",
+      progitTargetCriteria: "",
       instruments: "ALL*",
-      tradingPeriod: "30 trading days**",
+      tradingPeriod: "30 trading days",
       yourShare: "40 - 80%",
-      evaluationFee: "1500 INR",
+      evaluationFee: "INR 1500",
       tnc:
-        "No monthly fees, the choosen retail broker is offering trading days = business days",
+        "*Initial capital of INR 1 Lakh, and the capital will grow based on successful achievement of targets.",
     },
     {
-      initialCapital: "Rs. 25,00,000",
+      initialCapital: "INR 15 Lakh*",
       tradingStrategy: "Normal",
       progitTarget: "5%",
-      progitTargetCriteria: "(Funded account 2.5%)",
+      progitTargetCriteria: "",
       instruments: "ALL*",
-      tradingPeriod: "30 trading days**",
+      tradingPeriod: "30 trading days",
       yourShare: "40 - 80%",
-      evaluationFee: "7500 INR",
+      evaluationFee: "INR 4500",
       tnc:
-        "No monthly fees, the choosen retail broker is offering trading days = business days",
+        "*Initial capital of INR 3 Lakh, and the capital will grow based on successful achievement of targets.",
     },
     {
-      initialCapital: "50,00,000 INR",
+      initialCapital: "INR 25 Lakh*",
       tradingStrategy: "Normal",
       progitTarget: "5%",
-      progitTargetCriteria: "(Funded account 2.5%)",
+      progitTargetCriteria: "",
       instruments: "ALL*",
-      tradingPeriod: "30 trading days**",
+      tradingPeriod: "30 trading days",
       yourShare: "40 - 80%",
-      evaluationFee: "15000 INR",
+      evaluationFee: "INR 7500",
       tnc:
-        "No monthly fees, the choosen retail broker is offering trading days = business days",
+        "*Initial capital of INR 5 Lakh, and the capital will grow based on successful achievement of targets.",
     },
   ];
   private steps = [
@@ -45,7 +45,7 @@ export class FundedProgramService {
       icon: "ballot",
       title: "Choose Trading Program",
       description:
-        "You can choose a trading strategy and account size form $5,000 to $400,000 to meet your skills and profit targets.",
+        "You can choose a trading strategy and account size form INR 5 Lakh to INR 25 Lakh to meet your skills and profit targets.",
       btnText: "Trading Programs",
       url: "",
       // href: ''
@@ -54,7 +54,7 @@ export class FundedProgramService {
       icon: "query_stats",
       title: "Prove you can trade",
       description:
-        "Traders taking on the Fidelcrest Challenge must prove their Trading abilities by meeting specific Profit Targets without violating any of the Rules.",
+        "Traders taking on the Empuraan Challenge must prove their Trading abilities by meeting specific Profit Targets without violating any of the Rules.",
       btnText: "Learn Rules",
       url: "",
       // href: ''
@@ -63,7 +63,7 @@ export class FundedProgramService {
       icon: "monetization_on",
       title: "Start Earning",
       description:
-        "Once you have passed the challenge phase you can start earning commissions up to 50% of profits and after completing the funded verification phase, you can earn up 40 to 90% of all profits made. Fidelcrest pays your profits out every month!",
+        "Once you have passed the challenge phase you can start earning commissions up 40 to 90% of profits. Empuraan pays your profits out every month!",
       btnText: "Login",
       url: "",
       // href: ''
