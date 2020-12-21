@@ -1,72 +1,305 @@
 <div class="funded-challenge-container">
-  <div class="challenge-description">
-    <h2>Program Information</h2>
-  </div>
-  <div class="description-card">
-    <app-challenge-card [config]="cardConfig"></app-challenge-card>
-  </div>
-  <div class="description-table">
-    <!--Table-->
-    <table class="table table-striped w-auto">
-      <!--Table head-->
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>Country</th>
-          <th>City</th>
-          <th>Position</th>
-          <th>Age</th>
-        </tr>
-      </thead>
-      <!--Table head-->
+  <section class="challenge-description">
+    <h2 class="heading">Empuraan Funded - Program Information</h2>
+    <div class="description-card">
+      <app-challenge-card [config]="cardConfig"></app-challenge-card>
+    </div>
+  </section>
+  <section class="description-table">
+    <h3 class="table-heading">Min. Profit Targets</h3>
+    <div class="table-1">
+      <table class="table table-striped w-auto">
+        <tbody>
+          <tr>
+            <td style="text-align: left"></td>
+            <td style="text-align: center"><strong>STEP 1:</strong></td>
+            <td style="text-align: center"><strong>STEP 2:</strong></td>
+            <td style="text-align: center"><strong>STEP 3:</strong></td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>To proceed to the next phase:</strong>
+            </td>
+            <td style="text-align: center">7.5%</td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">–</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>To keep an account</strong>
+            </td>
+            <td style="text-align: center">7.5%</td>
+            <td style="text-align: center">0%</td>
+            <td style="text-align: center">–</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>To earn commission:</strong>
+            </td>
+            <td style="text-align: center">–</td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">5%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-      <!--Table body-->
-      <tbody>
-        <tr class="table-info">
-          <th scope="row">1</th>
-          <td>Kate</td>
-          <td>Moss</td>
-          <td>USA</td>
-          <td>New York City</td>
-          <td>Web Designer</td>
-          <td>23</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Anna</td>
-          <td>Wintour</td>
-          <td>United Kingdom</td>
-          <td>London</td>
-          <td>Frontend Developer</td>
-          <td>36</td>
-        </tr>
-        <tr class="table-info">
-          <th scope="row">3</th>
-          <td>Tom</td>
-          <td>Bond</td>
-          <td>Spain</td>
-          <td>Madrid</td>
-          <td>Photographer</td>
-          <td>25</td>
-        </tr>
-      </tbody>
-      <!--Table body-->
-    </table>
-    <!--Table-->
-  </div>
-  <div class="guidelines">
+    <h3 class="table-heading">Trader Commissions</h3>
+    <div class="table-2">
+      <table class="table table-striped w-auto">
+        <tbody>
+          <tr>
+            <td style="text-align: left"></td>
+            <td style="text-align: center"><strong>STEP 1:</strong></td>
+            <td style="text-align: center"><strong>STEP 2:</strong></td>
+            <td style="text-align: center"><strong>STEP 3:</strong></td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Min Profit target for commission:</strong>
+            </td>
+            <td style="text-align: center">–</td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">5%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>– Commission from reached profit target:</strong>
+            </td>
+            <td style="text-align: center">–</td>
+            <td style="text-align: center">40%</td>
+            <td style="text-align: center">40%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>– Commission from profit above profit target:</strong>
+            </td>
+            <td style="text-align: center">–</td>
+            <td style="text-align: center">40%</td>
+            <td style="text-align: center">80%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>– Commission payments:</strong>
+            </td>
+            <td style="text-align: center">–</td>
+            <td style="text-align: center">End of the Period</td>
+            <td style="text-align: center">End of the Period</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="table-heading">Trading Rules & Objectives</h3>
+    <div class="table-3">
+      <table class="table table-striped w-auto">
+        <tbody>
+          <tr>
+            <td style="text-align: left"></td>
+            <td style="text-align: center"><strong>STEP 1:</strong></td>
+            <td style="text-align: center"><strong>STEP 2:</strong></td>
+            <td style="text-align: center"><strong>STEP 3:</strong></td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>Trading period:</strong></td>
+            <td style="text-align: center">30 days</td>
+            <td style="text-align: center">30 days</td>
+            <td style="text-align: center">30 days</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>New period starts:</strong>
+            </td>
+            <td style="text-align: center">Anytime</td>
+            <td style="text-align: center">Mondays</td>
+            <td style="text-align: center">Mondays</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Min. trading days:</strong>
+            </td>
+            <td style="text-align: center">10 days</td>
+            <td style="text-align: center">10 days</td>
+            <td style="text-align: center">–</td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>– Positive days:</strong></td>
+            <td style="text-align: center">10 days</td>
+            <td style="text-align: center">10 days</td>
+            <td style="text-align: center">Not monitored</td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>Max loss:</strong></td>
+            <td style="text-align: center">10%</td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">5%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>– Max daily loss:</strong></td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">5%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>Max leverage:</strong></td>
+            <td style="text-align: center">1:100</td>
+            <td style="text-align: center">1:100</td>
+            <td style="text-align: center">1:100</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Stop Loss (SL) orders:</strong>
+            </td>
+            <td style="text-align: center">Required</td>
+            <td style="text-align: center">(recommended)</td>
+            <td style="text-align: center">(recommended)</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Take Profit (TP) orders:</strong>
+            </td>
+            <td style="text-align: center">(recommended)</td>
+            <td style="text-align: center">(recommended)</td>
+            <td style="text-align: center">(recommended)</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Max total margin usage:</strong>
+            </td>
+            <td style="text-align: center">10%</td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">10%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>– Single trade margin usage:&nbsp;</strong>
+            </td>
+            <td style="text-align: center">5%</td>
+            <td style="text-align: center">2.5%</td>
+            <td style="text-align: center">5%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>– Max Lot sizes:</strong></td>
+            <td style="text-align: center">Not monitored</td>
+            <td style="text-align: center">Not monitored</td>
+            <td style="text-align: center">Not monitored</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>News event trading:</strong>
+            </td>
+            <td style="text-align: center">Not allowed</td>
+            <td style="text-align: center">Not allowed</td>
+            <td style="text-align: center">Not allowed</td>
+          </tr>
+          <tr>
+            <td style="text-align: left"><strong>EA:</strong></td>
+            <td style="text-align: center">Allowed</td>
+            <td style="text-align: center">Allowed</td>
+            <td style="text-align: center">Allowed</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Min position duration:</strong>
+            </td>
+            <td style="text-align: center">10 sec</td>
+            <td style="text-align: center">10 sec</td>
+            <td style="text-align: center">10 sec</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              <strong>Closing open positions:</strong>
+            </td>
+            <td style="text-align: center">Weekly</td>
+            <td style="text-align: center">Weekly</td>
+            <td style="text-align: center">End of the Period</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="guidelines">
+    <h3 class="guidelines-heading">Detailed Explanation of Rules & Objectives:</h3>
     <mat-accordion class="example-headers-align" multi>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title> Personal data </mat-panel-title>
-          <mat-panel-description>
-            Type your name and age
-            <mat-icon>account_circle</mat-icon>
-          </mat-panel-description>
+          <mat-panel-title> Trading Program Phases </mat-panel-title>
         </mat-expansion-panel-header>
+        <div class="panel-body toggle-content">
+          <h2
+            data-fontsize="44"
+            data-lineheight="46.2px"
+            class="fusion-responsive-typography-calculated"
+            style="--fontSize: 44; line-height: 1.05"
+          >
+            STEP 1: Trading Challenge phase
+          </h2>
+          <ul>
+            <li>
+              Prove that you can trade by reaching min. profit target within 30
+              trading days without violating any rules or trading objectives.
+            </li>
+            <li>
+              If you can’t reach the profit target within 30-trading days and
+              you haven’t violated any rules you will get a second chance free
+              of charge (same account type and size). If you will violate any
+              rules or objectives, your challenge account will be failed. All
+              Fidelcrest accounts have automatic 24/7 monitoring. Only news
+              event trading might be reviewed manually after your trading period
+              has ended.
+            </li>
+            <li>
+              Once the Challenge phase has been completed you are ready to enter
+              Funded Verification phase and start earning real money.
+            </li>
+          </ul>
+          <h2
+            data-fontsize="44"
+            data-lineheight="46.2px"
+            class="fusion-responsive-typography-calculated"
+            style="--fontSize: 44; line-height: 1.05"
+          >
+            STEP 2: Funded Verification phase
+          </h2>
+          <ul>
+            <li>
+              Prove that you can trade with a funded account (under strict risk
+              management) and reach min. profit target within 30 calendar days
+              without violating any rules or trading objectives.
+            </li>
+            <li>
+              You can keep on trying to reach min. profit target as long as you
+              have reached min. profit to keep the funded verification account
+            </li>
+            <li>
+              You can withdraw your commission for that trading period once you
+              have reached min. profit target for commission payout and passed
+              the verification phase. After that, you are ready to enter Funded
+              Professional Account phase.
+            </li>
+          </ul>
+          <h2
+            data-fontsize="44"
+            data-lineheight="46.2px"
+            class="fusion-responsive-typography-calculated"
+            style="--fontSize: 44; line-height: 1.05"
+          >
+            STEP 3: Funded Professional account
+          </h2>
+          <ul>
+            <li>
+              You are now one of our team members and you will receive
+              commission after every trading period you’ve managed to reach
+              agreed min. profit target for commission.
+            </li>
+            <li>
+              You can trade your Funded Professional account as long as you
+              won’t reach loss limits or violate any trading rules and
+              objectives.
+            </li>
+          </ul>
+        </div>
       </mat-expansion-panel>
     </mat-accordion>
-  </div>
+  </section>
 </div>

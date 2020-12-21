@@ -1,11 +1,56 @@
 .funded-challenge-container {
-  .description-card {
-    width: 300px;
-    margin: auto;
+  .challenge-description {
+    .heading {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+      color: #000000;
+    }
+    .description-card {
+      width: 300px;
+      margin: 2rem auto;
+    }
   }
   .description-table {
-    .table {
+    .table-heading {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      color: #000000;
+    }
+    table {
       margin: auto;
+      background-color: #292b37;
+      color: #8d8f9a;
+      th {
+        border-top: 1px solid #8d8f9a;
+      }
+      thead {
+        th {
+          border-bottom: 1px solid #8d8f9a;
+        }
+      }
+      button {
+        background-color: #ffaa06;
+        color: #ffffff;
+      }
+    }
+  }
+  .guidelines {
+    .guidelines-heading {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      color: #000000;
     }
   }
 }
